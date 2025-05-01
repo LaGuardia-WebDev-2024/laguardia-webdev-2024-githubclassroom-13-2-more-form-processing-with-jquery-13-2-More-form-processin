@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Unit 13 Lessons</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Donut Calculator</h1>
+
+    <p>
+      Winston eats 3 donuts a day. How many donuts will he eat in his lifetime?
+    </p>
+
+    <form id="calculator-form">
+      <label>
+        Winston's final age:
+        <input type="number" name="age" />
+      </label>
+      <button type="submit">Calculate</button>
+      <div id="calculator-results"></div>
+    </form>
+
+    <form id="donut-form">
+      <hr />
+      <label>
+        Order a Donut
+        <select name="type">
+          <option value="glazed">Glazed Donut</option>
+          <option value="jelly">Jelly Donut</option>
+          <option value="boston">Boston Cream</option>
+        </select>
+      </label>
+      <button type="submit">Order</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $("#calculator-form").on("submit", function (event) {
+        event.preventDefault();
+
+        // *~*~*~* Type Leson Code Here *~*~*~*
+
+        var age = 1; //replace this line of code
+        var totalDonuts = 365 * 3 * age;
+        $("#calculator-results").text("Winston ate " + totalDonuts + " donuts");
+      });
+
+      // *~*~*~* Extra Code Below *~*~*~*
+      var donutImages = {
+        glazed:
+          "https://daylightdonutsstgeorge.com/wp-content/uploads/2023/06/Raised-Glazed.jpg",
+        jelly: "",
+        boston: "",
+      };
+
+      $("#donut-form").on("submit", function (event) {
+        event.preventDefault();
+        var $donutType = $(this).find("[name=type]"); // scoped
+        var donutType = $donutType.val();
+        var $img = $("<img>");
+        $img.width(100);
+        $img.attr("src", donutImages[donutType]);
+        $img.appendTo("body");
+      });
+    </script>
+  </body>
+</html>
+
+<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery https://www.khanacademy.org/computing/computer-programming/html-js-jquery
+Lesson: https://www.khanacademy.org/computing/computer-programming/html-js-jquery/form-processing-jquery/pc/challenge-donut-calculator
+-->

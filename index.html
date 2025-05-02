@@ -6,20 +6,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Donut Calculator</h1>
-
-    <p>
-      Winston eats 3 donuts a day. How many donuts will he eat in his lifetime?
-    </p>
-
-    <form id="calculator-form">
-      <label>
-        Winston's final age:
-        <input type="number" name="age" />
-      </label>
-      <button type="submit">Calculate</button>
-      <div id="calculator-results"></div>
-    </form>
+    <h1>Donuts!</h1>
 
     <form id="donut-form">
       <hr />
@@ -36,32 +23,22 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("#calculator-form").on("submit", function (event) {
-        event.preventDefault();
-
-        // *~*~*~* Type Leson Code Here *~*~*~*
-
-        var age = 1; //replace this line of code
-        var totalDonuts = 365 * 3 * age;
-        $("#calculator-results").text("Winston ate " + totalDonuts + " donuts");
-      });
-
-      // *~*~*~* Extra Code Below *~*~*~*
       var donutImages = {
         glazed:
           "https://daylightdonutsstgeorge.com/wp-content/uploads/2023/06/Raised-Glazed.jpg",
-        jelly: "",
-        boston: "",
+        jelly:          "https://static01.nyt.com/images/2014/12/14/magazine/14eat4/14eat4-superJumbo.jpg",
+        boston:
+          "https://i0.wp.com/www.onegreenplanet.org/wp-content/uploads/2020/03/screen-shot-2020-03-30-at-12-35-21-pm.png?fit=763%2C657&ssl=1",
       };
 
       $("#donut-form").on("submit", function (event) {
         event.preventDefault();
-        var $donutType = $(this).find("[name=type]"); // scoped
-        var donutType = $donutType.val();
-        var $img = $("<img>");
-        $img.width(100);
-        $img.attr("src", donutImages[donutType]);
-        $img.appendTo("body");
+
+        
+        
+        
+        
+        
       });
     </script>
   </body>

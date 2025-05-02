@@ -8,18 +8,18 @@
 
 ### Step #1 - Process the form <br>
 
-This webpage displays a form for calculating how many donuts Winston will eat in his lifetime, depending how old he makes it. We've already set up the basic form processing handler for you, so in this step, you're going to change the processing logic to get the value of the inputted age, calculate the total number of donuts, and output that in the results div.
+This webpage displays a form for ordering donuts We've already set up the basic form processing handler for you AND added images for a glazed, jelly and boston cream donut.
 <br><br>
-_Hint:_<br> ` var $age = $(" YYY ");`<br>
-          `var age = $XXX.val();`<br>
-          ` var totalDonuts = 365 * 3 * age;`
+In this step, you're going to change the processing logic to get the value of the selected drop down item, and add a corresponding image to the body.
 <br><br>
-### Step #2 - Try it out <br>
-Enter a final age for Winston and calculate the results. That's a lot of donuts, aye?
+_Hint:_<br> 
+`  var $donutType = $(this).find("......"); `<br>
+   `     var donutType = .....;`<br>
+ `       var $img = $("...");`<br>
+  `      $img.width(100);`<br>
+   `     $img.attr("src", ....);`<br>
+  `      $img.appendTo("body");`
 <br><br>
-### Step #3 - Donut Ordering <br>
-_(Optional) - Only do this step if you have extra time to play with the code. <br>_
-
-Most of the code for ordering donuts has been added.  Try to do these extras.<br>
-<li>Add the missing pictures for Jelly Donut and Boston Creme.</li> 
-<li>Add another donut type to the ordering system. </li>
+### Step #2 - Extra - Add a *new* donut type <br>
+_Do this step only if you have extra time_<br><br>
+Add another donut type to the ordering system. 

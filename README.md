@@ -13,12 +13,12 @@ This webpage displays a form for ordering donuts We've already set up the basic 
 In this step, you're going to change the processing logic to get the value of the selected drop down item, and add a corresponding image to the body.
 <br><br>
 _Hint:_<br> 
-`  var $donutType = $(this).find("......"); `<br>
-   `     var donutType = .....;`<br>
- `       var $img = $("...");`<br>
-  `      $img.width(100);`<br>
-   `     $img.attr("src", ....);`<br>
-  `      $img.appendTo("body");`
+`var $donutType = $(this).find("......"); `<br>
+`var donutType = .....;`<br>
+`var $img = $("...");`<br>
+`$img.width(100);`<br>
+`$img.attr("src", ....);`<br>
+`$img.appendTo("body");`
 <br><br>
 ### Step #2 - Extra - Add a *new* donut type <br>
 _Do this step only if you have extra time_<br><br>

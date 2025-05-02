@@ -7,7 +7,6 @@
 ## Directions
 
 ### Step #1 - Process the form <br>
-
 This webpage displays a form for ordering donuts We've already set up the basic form processing handler for you AND added images for a glazed, jelly and boston cream donut.
 <br><br>
 In this step, you're going to change the processing logic to get the value of the selected drop down item, and add a corresponding image to the body.
